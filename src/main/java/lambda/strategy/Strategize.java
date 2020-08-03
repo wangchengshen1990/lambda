@@ -1,4 +1,4 @@
-package main.java.lambda;
+package main.java.lambda.strategy;
 
 /**
  * @author wcs
@@ -35,7 +35,9 @@ public class Strategize {
                 },
                 //[3] lambda表达式
                 msg1 ->msg1.substring(0,5),
-                //[4] 方法的引用
+                //[4] Java 8 的方法引用，它以 :: 为特征。
+                // :: 的左边是类或对象的名称， :: 的右边是方法的名称，
+                // 但是没有参数列表。
                 Unrelated::twice
         };
         Strategize s = new Strategize("Hello there");

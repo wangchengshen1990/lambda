@@ -1,4 +1,4 @@
-package main.java.lambda;
+package main.java.lambda.strategy;
 
 
 /***
